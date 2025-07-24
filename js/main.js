@@ -3,8 +3,11 @@ function changePage(url, score = 0, correct = 0, incorrect = 0) {
   sessionStorage.setItem("playerScore", score);
   sessionStorage.setItem("incorrect", incorrect);
   sessionStorage.setItem("correct", correct);
-  console.log(url);
-  window.location.href = `./html/loading.html?next=${encodeURIComponent(url)}`;
+  
+  const basePath = window.location.pathname.split("/").slice(0, 2).join("/");
+  window.location.href = `${basePath}/html/loading.html?next=${encodeURIComponent(
+    url
+  )}`;
 }
 
 var bien = true;
