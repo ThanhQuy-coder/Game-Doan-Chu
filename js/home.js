@@ -6,37 +6,37 @@ window.onload = function () {
 /* KHAI BAO BIEN */
 const imageList = [
   {
-    src: "/images/questions/bahoa.png",
+    src: "../images/questions/bahoa.png",
     answer: "ba hoa",
     suggest: "Hãy để ý số lượng hoa",
   },
   {
-    src: "/images/questions/baocao.png",
+    src: "../images/questions/baocao.png",
     answer: "báo cáo",
     suggest: "Hãy đọc tên của chúng",
   },
   {
-    src: "/images/questions/hocduong.png",
+    src: "../images/questions/hocduong.png",
     answer: "học đường",
     suggest: "Người đàn ông đang học",
   },
   {
-    src: "/images/questions/kichdong.png",
+    src: "../images/questions/kichdong.png",
     answer: "kích động",
     suggest: "vũ khí trên hình gọi chung là thương 'kích'",
   },
   {
-    src: "/images/questions/nanglong.png",
+    src: "../images/questions/nanglong.png",
     answer: "nặng lòng",
     suggest: "Cái cân bị nghiêng về một bên do quá 'nặng'",
   },
   {
-    src: "/images/questions/noigian.png",
+    src: "../images/questions/noigian.png",
     answer: "nội gián",
     suggest: "Bên ngoài còn được gọi là 'ngoại'",
   },
   {
-    src: "/images/questions/xemtuong.png",
+    src: "../images/questions/xemtuong.png",
     answer: "xem tướng",
     suggest: "Hình được treo là một vị tướng",
   },
