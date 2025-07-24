@@ -4,7 +4,7 @@ function changePage(url, score = 0, correct = 0, incorrect = 0) {
   sessionStorage.setItem("incorrect", incorrect);
   sessionStorage.setItem("correct", correct);
   console.log(url);
-  window.location.href = `/html/loading.html?next=${encodeURIComponent(url)}`;
+  window.location.href = `../html/loading.html?next=${encodeURIComponent(url)}`;
 }
 
 var bien = true;
