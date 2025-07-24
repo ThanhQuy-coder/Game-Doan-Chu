@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả</title>
+    <link rel="stylesheet" href="../css/end.css" />
+    <script
+      src="https://kit.fontawesome.com/ccdfbda3a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container--page">
+      <header>
+        <button class="btn-home" onclick="changePage('index.html')">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button id="turn-music" onclick="handleVolume()" class="btn-volume">
+          <i id="music-on" class="fa-solid fa-volume-high"></i>
+          <i id="music-off" class="fa-solid fa-volume-xmark"></i>
+        </button>
+        <audio autoplay loop id="music">
+          <source src="../audio/chill-beats-185843.mp3" type="audio/mpeg" />
+        </audio>
+      </header>
+      <main>
+        <div class="container">
+          <div id="result" class="result-container">
+            <h1 id="sum-point"></h1>
+            <h2 id="sumAnswerCorrect">Số lượng câu đúng:</h2>
+            <h2 id="sumAnswerIncorrect">Số lượng câu sai:</h2>
+          </div>
+          <div class="btn-container">
+            <button class="btn-exit" onclick="changePage('index.html')">
+              THOÁT
+            </button>
+            <button class="btn-continue" onclick="changePage('home.html')">
+              CHƠI LẠI
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="../js/main.js"></script>
+  <script src="../js/end.js"></script>
+</html>

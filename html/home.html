@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trò chơi</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/ccdfbda3a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="btn-home" onclick="window.history.go(-2)">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <div class="question-time">
+          <div class="time-bar" id="timeBar">
+            <span id="timeText">30</span>
+          </div>
+        </div>
+        <div class="volume-container">
+          <button id="turn-music" onclick="handleVolume()">
+            <i id="music-on" class="fa-solid fa-volume-high"></i>
+            <i id="music-off" class="fa-solid fa-volume-xmark"></i>
+          </button>
+          <audio autoplay loop id="music">
+            <source src="../audio/chill-beats-185843.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </header>
+      <main>
+        <!-- Hien thi ket qua cua cau hoi -->
+        <div id="flashMessage" class="flash-message hidden">
+          <p id="flashText"></p>
+        </div>
+        <!-- Phan ki nang ho tro -->
+        <div class="left-sidebar">
+          <ul class="list-of-skills">
+            <li>
+              <button onclick="skills(1)" id="free-one-time" class="skill">
+                Bỏ qua câu hỏi
+              </button>
+            </li>
+            <li>
+              <button onclick="skills(2)" id="suggestion" class="skill">
+                Gợi ý thêm
+              </button>
+            </li>
+            <li>
+              <button onclick="skills(3)" id="add-time" class="skill">
+                Thêm thời gian
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Phan cau hoi -->
+        <div class="content-sidebar">
+          <img id="question-image" src="" alt="question" />
+        </div>
+      </main>
+      <footer>
+        <div class="point-container">
+          <p id="point"></p>
+        </div>
+        <input
+          type="text"
+          name="answer"
+          id="answer-input"
+          placeholder="Nhập câu trả lời..."
+        />
+        <button onclick="checkAnswer()" id="btn-answer">Gửi</button>
+      </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>

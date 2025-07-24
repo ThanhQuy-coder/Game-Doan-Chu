@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Comic Sans MS", "Baloo 2", cursive;
+  color: #fff;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 70px;
+  padding: 5px;
+  margin-bottom: 10%;
+  text-shadow: 1px 1px 2px #ff8f55, 1px 1px 3px #ff8f55, 1px 1px 4px #ff8f55,
+    1px 1px 6px #ff8f55;
+}
+
+.btn-start {
+  text-wrap: nowrap;
+  width: 200px;
+  color: #111;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #ff8f55;
+  border: 3px #fff solid;
+  cursor: pointer;
+}
+
+.btn-start:hover {
+  background-color: #ff5500;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
